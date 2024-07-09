@@ -2,6 +2,7 @@
 
 A dynamic product page crafted using Next.js, Tailwind CSS, Lucid Icons, Redux Toolkit, and a drag-and-drop library (please specify the library you're using) to deliver an intuitive experience for managing and organizing products.
 
+# Live Link - https://venkatsai-retain-iq-asignment-pfv5os2jx.vercel.app/
 
 ## Key Features
 
