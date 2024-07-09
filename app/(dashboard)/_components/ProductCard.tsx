@@ -45,8 +45,6 @@ const ProductCard: React.FC = () => {
 
   const handleDragEnd = (event: any) => {
     const { active, over } = event;
-    // console.log(active, over);
-
     const tableData = data.filter((_: any, i: number) => i === active.id - 1);
 
     if (active.id - 1 !== over.id - 1) {
@@ -62,7 +60,7 @@ const ProductCard: React.FC = () => {
   const toggleDropdown = (index: number) => {
     if (dropdownOpen === index) {
       setDropdownVisible(null);
-      setTimeout(() => setDropdownOpen(null), 200); // Match this timeout to the transition duration
+      setTimeout(() => setDropdownOpen(null), 200);
     } else {
       setDropdownOpen(index);
       setDropdownVisible(index);
@@ -106,7 +104,11 @@ const ProductCard: React.FC = () => {
                     <TableHead className="text-center w-full" key={index + 1}>
                       <div className="flex w-full jusitify-between relative">
                         <p className="w-full"> Variant {index + 1}</p>
-                        <div ref={(el) => (dropdownRefs.current[index] = el)}>
+                        <div
+                          ref={(el) => {
+                            dropdownRefs.current[index] = el;
+                          }}
+                        >
                           <button
                             id="dropdownMenuIconButton"
                             onClick={() => toggleDropdown(index)}
