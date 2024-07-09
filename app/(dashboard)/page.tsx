@@ -1,6 +1,5 @@
 "use client";
 import Navbar from "@/app/components/navbar";
-
 import Sidebar from "@/app/components/sidebar";
 import store, { persistor } from "../redux/store/store";
 import { Provider } from "react-redux";
@@ -41,7 +40,7 @@ const Dashboard = () => {
             <div className="min-w-screen p-5 bg-#f9fafb-500">
               <label className="inline-flex items-center cursor-pointer">
                 <span className="ms-3 text-lg font-bold text-gray-900 dark:text-gray-300 px-2">
-                  Use different design for remaining SKU's
+                  Use different design for remaining SKU&apos;s
                 </span>
                 <input
                   type="checkbox"
