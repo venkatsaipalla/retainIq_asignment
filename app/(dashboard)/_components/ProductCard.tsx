@@ -11,7 +11,7 @@ import {
 } from "@/app/components/commonComponents/table";
 
 import { PlusIcon } from "lucide-react";
-import DraggableRow from "@/app/(dashboard)/_components/table/DraggableRow";
+import DraggableRow from "@/app/components/DraggableRow";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addRow,
