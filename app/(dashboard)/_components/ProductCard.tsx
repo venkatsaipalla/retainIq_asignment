@@ -18,7 +18,7 @@ import {
   removeRow,
   removeVariant,
   setTableData,
-} from "@/app/redux/reducers/products";
+} from "@/app/redux/reducers/productReducer";
 import { DndContext, closestCorners } from "@dnd-kit/core";
 import {
   SortableContext,

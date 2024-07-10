@@ -9,7 +9,7 @@ import {
 import { ImageIcon, Search } from "lucide-react";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { updateData } from "@/app/redux/reducers/products";
+import { updateData } from "@/app/redux/reducers/productReducer";
 
 import toast from "react-hot-toast";
 import { useState } from "react";

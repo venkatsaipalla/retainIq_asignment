@@ -10,7 +10,7 @@ import {
   DialogTrigger,
 } from "@/app/components/commonComponents/dialog";
 import { Plus, X } from "lucide-react";
-import { addFilters, updateData } from "@/app/redux/reducers/products";
+import { addFilters, updateData } from "@/app/redux/reducers/productReducer";
 import { close } from "@/app/redux/reducers/filterCardOpen";
 
 const FilterCard = () => {

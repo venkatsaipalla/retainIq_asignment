@@ -1,6 +1,6 @@
 "use client";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import productsReducer from "../reducers/products";
+import productsReducer from "../reducers/productReducer";
 import selectProductReducer from "../reducers/selectProduct";
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from "redux-persist";
@@ -29,12 +29,12 @@ const store = configureStore({
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [
-          'persist/PERSIST',
-          'persist/REHYDRATE',
-          'persist/PAUSE',
-          'persist/PURGE',
-          'persist/FLUSH',
-          'persist/REGISTER'
+          "persist/PERSIST",
+          "persist/REHYDRATE",
+          "persist/PAUSE",
+          "persist/PURGE",
+          "persist/FLUSH",
+          "persist/REGISTER",
         ],
       },
     }),

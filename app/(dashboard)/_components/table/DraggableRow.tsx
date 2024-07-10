@@ -4,7 +4,7 @@ import ProductImage from "@/app/components/productImage";
 import SerialNumber from "@/app/components/serialNumber";
 import { PlusIcon } from "lucide-react";
 import { useDispatch } from "react-redux";
-import { addVariant, setTableData } from "@/app/redux/reducers/products";
+import { addVariant, setTableData } from "@/app/redux/reducers/productReducer";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import toast from "react-hot-toast";

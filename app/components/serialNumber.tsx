@@ -1,4 +1,4 @@
-import { removeRow } from "@/app/redux/reducers/products";
+import { removeRow } from "@/app/redux/reducers/productReducer";
 import { useSortable } from "@dnd-kit/sortable";
 import { Grip, Trash2 } from "lucide-react";
 import { useDispatch } from "react-redux";
